@@ -14,7 +14,10 @@ module.exports = {
    },
    spacing:{
     '0.1':'0.063'
-   }
+   },
+   backgroundImage:theme=>({
+    'mobile-app': 'url(https://getir.com/_next/static/images/doodle-d659f9f1fd505c811c2331fe3ffddd5f.png)'
+   })
     },
   },
   plugins: [],
