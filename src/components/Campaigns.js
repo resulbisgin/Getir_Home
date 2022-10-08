@@ -69,13 +69,15 @@ function Campaigns() {
         ]
       };
     return (
-        <div className="container mx-auto py-8"> 
+        <div className="container mx-auto md:py-8"> 
+        <div className="hidden md:block">
         <Title>Kampanyalar</Title>
-              <Slider className="-mx-2" {...settings}>
+        </div>
+              <Slider className="md:-mx-2" {...settings}>
                 {banners.length && banners.map(banner => (
                     <div key={banner.id}>
                         <picture className="block px-2">
-                            <img src={banner.image} className="rounded-lg" />
+                            <img src={banner.image} className="md:rounded-lg" />
                         </picture>
                     </div>
                 ))}
